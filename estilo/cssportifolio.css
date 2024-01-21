@@ -1,0 +1,211 @@
+
+@charset "UTG-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: Roboto Mono, 'Times New Roman';
+}
+
+body{
+    color: white;
+    margin: 50px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 27, 56);
+}
+
+header{
+    height: 750px;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.404);
+    box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.348);
+}
+nav{
+    padding-bottom: 50px;
+}
+ul{
+   display: flex;
+   justify-items: left;
+   text-decoration: none;
+   list-style-type: none;
+}
+
+li{
+    padding: 15px;
+}
+
+#apresentacao{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+ margin: 15px;
+ height: 50px;
+ width: 150px;
+ border-radius: 10px;
+ box-shadow: 2px 3px 4px black;
+}
+
+button:hover{
+    background-color: rgba(234, 229, 229, 0.523);
+}
+
+#eu{
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+}
+
+main{
+    padding-top: 100px;
+}
+
+#aboutme{
+   padding: 50px;
+   padding-bottom: 250px;
+}
+
+#aboutme > h1,p{
+    padding: 20px;
+}
+
+.projetos{
+    padding: 50px;
+    margin: -50px;
+    background-image:linear-gradient(to bottom, #11081F,#0A121F,#244def4b,#11081F);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: right center;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.077);
+    border-radius: 100px;
+}
+.projetos > h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.projetos > h1, h3, p{
+   padding: 25px;
+}
+
+#chat{
+    padding-bottom: 200px;
+}
+#tecnologias{
+font-size: larger;
+text-transform: uppercase;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ padding-top: 200px;
+ height: 550px
+}
+#tecnologias > ul{
+    list-style-type: circle;
+    display: block;
+    columns: 3;
+}
+
+.imgs{
+    height: 550px;
+    width: 700px;
+    max-width: 100%;
+}
+.icons{
+    width: 30px;
+    position: absolute;
+    margin: 25px;
+}
+a{
+    padding-left: 25px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+ #btnwpp{
+    display: flex;
+    position:fixed;
+    margin: 39%;
+    margin-left: 185vh;
+    z-index: 1000;
+} 
+
+#imgwpp{
+ height: 85px;
+ width: 85px;
+}
+
+#formulario{
+    height: 550px;
+    width: 100vh;
+    background-color: #e1dde733;
+    margin: auto;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#formulario >h2{
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.user{
+    display: inline;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+fieldset{
+    border: 0;
+    padding-bottom: 25px;
+}
+ input{
+   height: 30px;
+   width: 200px;
+}
+.toplabel{
+    padding-top: 25px;
+    display: inline;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+#inputdescricao{
+padding-top: 25px;
+display: block;
+flex-direction: column;
+justify-content: center;
+width: 400px;
+height: 100px;
+margin: 10px;
+}
+#descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+#enviar{
+   margin-left: 40%;
+   
+}
+footer{
+   margin: -50px;
+   min-width: 400px;
+   background-color: rgba(0, 0, 0, 0.226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  text-transform: uppercase;  
+}
+

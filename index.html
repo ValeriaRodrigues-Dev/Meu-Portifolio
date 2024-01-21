@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/cssportifolio.css">
     <title>Meu Portifolio</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Sobre mim
-                <li>Projetos
-                <li>Tecnologias
-                <li>Contatos
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li>Sobre mim
+                    <li>Projetos
+                    <li>Tecnologias
+                    <li>Contatos
+                </ul>
+            </nav>
+        <div id="apresentacao">
+            <h1>Valéria Rodrigues</h1>
+            <img id="eu" src="imgs/Screenshot_20240118-171358.png" alt="">
+            <div>
+                <img class="icons" src="imgs/github.png" alt="icon_Github">
+                <button>
+                    <a class="imggitlink" href="https://github.com/ValeriaRodrigues-Dev" target="_blank">github</a>
+                </button>
+                <img class="icons" src="imgs/linkedin.png" alt="icon_linkedin">
+                <button>
+                <a class="imggitlink" href="https://www.linkedin.com/in/val%C3%A9ria-rodrigues-oliveira-perfilprofissional02032003/" target="_blank">
+                linkedin
+                </a>
+               </button>
+            </div>
+
+        </div>
     </header>
 
     <main>
         <div id="aboutme">
-            <H1>Sobre mim</H1>
+            <h1>Sobre mim</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, quod quo. Modi aliquid harum excepturi eligendi porro, sint at, voluptatem molestiae animi ducimus 
                 ea amet. Dolorum enim optio obcaecati nihil? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, voluptatem. Excepturi nisi mollitia illo natus quo explicabo veritatis soluta tenetur, maxime culpa facilis fuga rem 
                 numquam aspernatur, possimus hic quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. A vero at cum explicabo possimus iusto, deleniti vel sequi nemo vitae temporibus ad nisi autem dolor. 
@@ -35,59 +53,82 @@
                 <h3>sobre:</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat tempora, rerum impedit officiis, aut odio, quasi laboriosam quos quidem aspernatur reiciendis! Dolores sed similique
                      doloribus assumenda ipsum placeat provident.</p>
-                <img src="imgs/jogo.png" alt="imgjogodeadvinhar">
+                <img class="imgs" src="imgs/jogo.png" alt="imgjogodeadvinhar">
             </div>
             <div id="cronometro">
                 <h1>cronometro</h1>
                 <h3>sobre:</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat tempora, rerum impedit officiis, aut odio, quasi laboriosam quos quidem aspernatur reiciendis! Dolores sed similique
                      doloribus assumenda ipsum placeat provident.</p>
-                <img src="imgs/cronometro.png" alt="">
+                <img class="imgs" src="imgs/cronometro.png" alt="">
             </div>
 
             <div id="chat">
-                CHAT
+                <p>CHAT</p>
             </div>
-        </div>
-         <div>
-            <h1>Tecnologias</h1>
-            <p>Já tive contato</p>
-            <ul>
-                <li>C++</li>
-                <li>PYTHON</li>
-                <li>JAVA</li>
-                <li>PHP</li>
-                <li>JAVASCRIPT</li>
-                ----------------------
-                <li>HTML5</li>
-                <li>CSS3</li>
-                ----------------------
-                <li>SQL SERVER</li>
-                <li>POSTGRESQL</li>
-                <li>MYSQL</li>
-            </ul>
-         </div>
-        <div>
-           <a href="https://wa.me/qr/YMVRKLICFVKNM1" target="_blank"> <img src="imgs/whatsapp.png" alt="Icon_wpp"></a>
-        </div>
+        </div >
     </main>
 
-    <footer>
-        <div>
-            <h3>Deseja fazer alguma proposta?</h3>
-            <form action=""></form>
-            <!-- 
-            - NOME
-            -EMAIL
-            -NUMERO
-            -O QUE DESEJA? 
-            -->
+    <div id="tecnologias">
+        <h1>Tecnologias</h1>
+        <p>Já tive contato</p>
+        <ul>
+            Linguagens:
+            <li>C++</li>
+            <li>PYTHON</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <br>
+            <li>JAVASCRIPT</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+           <br>
+           <br>
+           bancos:
+            <li>SQL SERVER</li>
+            <li>POSTGRESQL</li>
+            <li>MYSQL</li>
+        </ul>
+    </div>
+
+    <div id="btnwpp">
+        <a href="https://wa.me/qr/YMVRKLICFVKNM1" target="_blank"> <img id="imgwpp"src="imgs/whatsapp.png" alt="Icon_wpp"></a>
+    </div>
+
+    
+            <div id="formulario">
+                <h2>Deseja fazer alguma proposta?</h2>
+             <form action="script/scriptportifolio.js" autocomplete="off">
+                <!-- autocomplete para tirar as sugestoes de nome já inseridos -->
+                <fieldset>
+                    <div class="user" >
+                      <label for="nomeuser"> Nome </label>
+                       <input type="text" name="nomeuser" id="nomeuser">
+                    </div>
+                    <div class="user">
+                        <label for="sobrenomeuser">Sobrenome</label>
+                        <input type="text" name="sobrenomeuser" id="sobrenomeuser">
+                    </div>
+                </fieldset>
+                <div class="toplabel">
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail">
+                </div>
+                <div class="toplabel">
+                    <label for="inputnumuser">Telefone</label>
+                     <input type="number" name="inputnumuser" id="inputnumuser">
+                </div>
+                <div id="descricao">
+                    <label for="inputdescricao">O que você deseja?</label>
+                    <textarea name="inputdescricao" id="inputdescricao" cols="20" rows="10"></textarea>
+                </div>
+                <button id="enviar">Enviar</button>
+            </form>
         </div>
-        <div>
-            <a href="https://github.com/ValeriaRodrigues-Dev" target="_blank"><img src="imgs/github.png" alt="icon_github"></a>
-             <a href="https://www.linkedin.com/in/val%C3%A9ria-rodrigues-oliveira-perfilprofissional02032003/" target="_blank"><img src="imgs/linkedin.png" alt="icon_linkedin"></a>
-         </div>
+         
+        
+    <footer>
         <p>Obrigado pela visita!</p>
-    </footer>
+      </footer>
 </body>
 </html>
